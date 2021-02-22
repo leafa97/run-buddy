@@ -23,6 +23,9 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header a {
@@ -78,6 +81,23 @@ footer {
       background-size: cover;
       background-position: center;
       position: relative;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  .hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
   }
   /* Hero Style End */
 
@@ -85,11 +105,12 @@ footer {
     border: 3px solid #024e76;
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
     color: #024e76;
     position: absolute;
     bottom: 120px;
     right: 140px;
+    width: 40%;
+    margin: 3.5%;
 }
 
 .hero-form h3 {
@@ -171,7 +192,7 @@ footer {
       margin-top: 10px;
   }
 
-  steps p {
+  .steps p {
       color: #39a6b2;
       font-size: 23px;
   }
