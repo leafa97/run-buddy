@@ -265,3 +265,15 @@ footer {
 .flex-row {
     display: flex;
 }
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-info iframe {
+    height: ;
+}
+
+.contact-info iframe{
+    color:#024e76;
+}
