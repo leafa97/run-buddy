@@ -26,6 +26,7 @@ header h1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 header a {
@@ -50,6 +51,7 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -99,6 +101,7 @@ footer {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   /* Hero Style End */
@@ -262,7 +265,6 @@ footer {
 }
 
 
-}
 /* REACH OUT STYLES START */
 .contact {
     background: #024e76;
