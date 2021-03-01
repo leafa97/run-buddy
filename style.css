@@ -35,7 +35,6 @@ header a {
 }
 
 header nav {
-    float: right;
     margin: 7px 0;
 }
 
@@ -48,7 +47,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -77,17 +76,18 @@ footer {
  footer a {
       color: #024e76;
   }
+ 
 
   /* Hero Style Start */
   .hero {
       background-image: url("./assets/images/hero-bg.jpg");
-      height: 600px;
       background-size: cover;
       background-position: center;
       position: relative;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      align-items: flex-start;
   }
   .hero-cta {
     width: 35%;
@@ -95,7 +95,8 @@ footer {
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 1.2;
+    
   }
   .hero-cta h2 {
     font-style: italic;
@@ -111,9 +112,7 @@ footer {
     background-color: #fce138;
     padding: 20px;
     color: #024e76;
-    position: absolute;
     bottom: 120px;
-    right: 140px;
     width: 40%;
     margin: 3.5%;
 }
@@ -133,6 +132,7 @@ footer {
     font-size: 16px;
     color: #024e76;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .hero-form label {
@@ -157,7 +157,7 @@ footer {
 }
 
 .section-title {
-    font-size: 55px;
+    font-size: 48px;
     color: #024e76;
     border-bottom: 3px solid;
     padding-bottom: 20px;
@@ -238,15 +238,6 @@ footer {
     padding: 25px;
     line-height: 1.3;
   }
-
-  .text-left {
-      text-align: left;
-  }
-
-  .text-right {
-      text-align: right;
-  }
-
   .trainer-bio h3 {
     font-size: 28px;
   }
@@ -260,9 +251,6 @@ footer {
   .trainer-bio p {
     font-size: 17px;
   }
-  .flex-row {
-    display: flex;
-}
 
 
 /* REACH OUT STYLES START */
@@ -343,4 +331,90 @@ footer {
   
   .flex-row {
     display: flex;
+  }
+
+  /*media query for smaller desktop screens*/
+  @media screen and (max-width: 980px) {
+    header h1 a {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  /*media query for tablets and smaller 768-575*/
+  @media screen and (max-width: 768px) {
+      section {
+        padding: 30px 15px;
+      }
+    
+      .step h3 {
+        flex: 1 100%;
+        text-align: center;
+      }
+    
+      .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+      }
+    
+      .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    
+      .step-text {
+        flex: 100%;  
+      }
+  }
+
+  /*media query for phones and smaller 575 and less*/
+  @media screen and (max-width: 575px) {
+      .hero-form button {width: 100%;
+      }
+    
+      .section-title {
+        width: 95%;
+      }
+    
+      .intro p {
+        width: 100%;
+      }
+    
+      .trainer {
+        flex: 0 100%;
+      }
+    
+      .contact-info {
+        text-align: center;
+      }
+    
+      .contact-info > * {
+        flex: 0 100%;
+      }
+    
+      .contact-form {
+        order: 3;
+      }
   }
