@@ -247,8 +247,6 @@ footer {
   }
 
 
-
-}
 /* REACH OUT STYLES START */
 .contact {
     background: #024e76;
@@ -358,7 +356,6 @@ footer {
 
   /*media query for tablets and smaller 768-575*/
   @media screen and (max-width: 768px) {
-    header h1 {
       section {
         padding: 30px 15px;
       }
@@ -384,14 +381,11 @@ footer {
       .step-text {
         flex: 100%;  
       }
-    }
   }
 
   /*media query for phones and smaller 575 and less*/
   @media screen and (max-width: 575px) {
-    header h1{
-      .hero-form button {
-        width: 100%;
+      .hero-form button {width: 100%;
       }
     
       .section-title {
